@@ -1,3 +1,5 @@
+
+
 {% extends 'base.html' %}
 
 {% load static %}
@@ -7,9 +9,100 @@ Home
 {% endblock %}
 
 {% block content %}
+
+
+<style type="text/css">
+	.container-fluid{
+		position: relative;
+		filter: brightness(0.8);
+		opacity: 50%;
+	}
+
+	.container{
+		position: absolute;
+		top: 0;
+		color: black;
+		margin-left: 15px;
+		margin-top: 200px;
+		text-transform: font-weight-bold;
+	}
+
+	.textic{
+		font-weight: bold;
+	}
+
+	.card-img-top
+	{
+		max-width: 300px%;
+		height: 300px;
+	}
+</style>
+
 <div class="container-fluid">
 	<div class="row">
 		<img src="{% static 'ариста.jpg' %}">
 	</div>	
+
 </div>
+
+<div class="container">
+	<div class="row justify-content-around ">
+		<div class="col-4">
+			<h1 class="font-weiht-bold text-uppercase">срочный выкуп автомобилей!!!</h1>
+			<div class="textic">
+				<p>Только иномарки от 1998 года</p>
+				<p>В день обращения! Дорого</p>
+				<p>В СПБ и ЛО!</p>
+			</div>
+
+		</div>
+		<div id="tex" class="col-6" >
+			<span class="material-icons">pending</span>
+			<h3>Об услуге</h3>
+			<p class="textic">Если Вам нужно срочно продать авто и получить деньги без проблем и головной боли, то услуга «срочный выкуп автомобилей» – как раз для Вас! 
+			Вам нужно лишь связаться с нашими специалистами и и сообщить нам следующие детали:
+
+				<ul>
+					<li>Модель и марку авто</li>
+					<li>Дату выпуска авто</li>
+					<li>Тип коробки передач и двигателя</li>
+					<li>Общее описание состояния, в котором находится авто и документы</li>
+				</ul>
+			На основании этих сведений наши специалисты смогут огласить цену, которую Вы сможете получить при заключении сделки. Если условия Вас устроят, то мы договоримся о месте и времени осмотра авто. 
+			<br>
+			<br>
+			Если описание автомобиля соответствует действительности,то выкуп производится тут же. Вы получаете оговоренную сумму и договор купли-продажи.
+			</p>
+		</div>
+	</div>
+
+	<div class="card-deck row justify-content-center">
+	  <div class="card col-3">
+	    <img class="card-img-top" src="{% static 'китаец.jpeg' %}" alt="Card image cap" >
+	    <div class="card-body">
+	      <h5 class="card-title">Название карточки</h5>
+	      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+	    </div>
+	  </div>
+	  <div class="card col-3">
+	    <img class="card-img-top" src="{% static 'опель астра гтс.jpg' %}" alt="Card image cap">
+	    <div class="card-body">
+	      <h5 class="card-title">Название карточки</h5>
+	      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+	    </div>
+	  </div>
+	  <div class="card col-3">
+	    <img class="card-img-top" src="{% static 'ниссан примьера.jpg' %}" alt="Card image cap">
+	    <div class="card-body">
+	      <h5 class="card-title">Название карточки</h5>
+	      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+	    </div>
+	  </div>
+	</div>
+	
+
+</div>
+
+
+
 {% endblock %}
