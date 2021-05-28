@@ -15,18 +15,30 @@
     <title>{% block title %} {% endblock %}</title>
   </head>
   <body>
-
+{% load static %}
 
   	<nav class="navbar navbar-expand-md navbar-light bg-dark">
 
-  		<a href="#" class="navbar-brand"><span class="material-icons">directions_car</span></a>
+  		<a href="#" class="navbar-brand"><span class="material-icons" style="margin-left: 15px;">directions_car</span></a>
   		<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbar"><span class="navbar-toggler-icon"></span></button>
   		<div id="navbar" class ="collapse navbar-collapse justify-content-between">
   		<ul class="navbar-nav">
-  			<li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="">Контакты</a></li>
-  			<li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="">Радиус работы</a></li>
-  			<li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="">Что нибудь еще</a></li>
+  			<li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="">Выкуп СПБ</a></li>
+  			<li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="tel: +79522224935">+79522224935</a></li>
+  			<li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="https://wa.me/89522224935">
   		</ul>
+      <ul class="navbar-nav text-right">
+        <li class="nav-item">
+          <a href="mailto:svishvenkov@mail.ru">
+            <span class="material-icons">email</span>
+          </a>
+        </li>
+        <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="https://wa.me/89522224935">
+        <img class="card-img-center" src="{% static 'whatsapp.png' %}" style="max-height: 30px; max-width: 30px;">   
+        </a></li>
+        <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="https://t.me/servikup">
+          <img class="card-img-center" src="{% static 'telegram.png' %}" style="max-height: 30px; max-width:30px;"></a></li>
+      </ul>
   	</div>
   	</nav>
 	<!-- <header>

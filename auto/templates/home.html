@@ -31,11 +31,11 @@ Home
 		font-weight: bold;
 	}
 
-	.card-img-top
+/*	.card-img-top
 	{
-		max-width: 300px%;
-		height: 300px;
-	}
+		max-width: 200px;
+		height: 200px;
+	}*/
 </style>
 
 <div class="container-fluid">
@@ -53,6 +53,12 @@ Home
 				<p>Только иномарки от 1998 года</p>
 				<p>В день обращения! Дорого</p>
 				<p>В СПБ и ЛО!</p>
+				<ul>
+					<li>Битые</li>
+					<li>Залоговые</li>
+					<li>Без ПТС</li>
+					<li>С арестом</li>
+				</ul>
 			</div>
 
 		</div>
@@ -76,26 +82,33 @@ Home
 		</div>
 	</div>
 
-	<div class="card-deck row justify-content-center">
-	  <div class="card col-3">
-	    <img class="card-img-top" src="{% static 'китаец.jpeg' %}" alt="Card image cap" >
+	<div class="card-deck row justify-content-center " style="margin-left:150px;" >
+	  <div class="card col-3 bg-info">
+	    <img class="card-img-center" src="{% static 'китаец.jpeg' %}" alt="Card image cap" >
 	    <div class="card-body">
-	      <h5 class="card-title">Название карточки</h5>
-	      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+	      <h5 class="card-title">Toyota Platz 2000г.</h5>
+	      <p class="card-text">97.000</p>
 	    </div>
 	  </div>
-	  <div class="card col-3">
-	    <img class="card-img-top" src="{% static 'опель астра гтс.jpg' %}" alt="Card image cap">
+	  <div class="card col-3 bg-info">
+	    <img class="card-img-center" src="{% static 'форд фьюжн.jpg' %}" alt="Card image cap">
 	    <div class="card-body">
-	      <h5 class="card-title">Название карточки</h5>
-	      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+	      <h5 class="card-title">Ford Fusion 2010г.</h5>
+	      <p class="card-text">165.000</p>
 	    </div>
 	  </div>
-	  <div class="card col-3">
-	    <img class="card-img-top" src="{% static 'ниссан примьера.jpg' %}" alt="Card image cap">
+	  <div class="card col-3 bg-info">
+	    <img class="card-img-center" src="{% static 'ниссан примьера.jpg' %}" alt="Card image cap">
 	    <div class="card-body">
-	      <h5 class="card-title">Название карточки</h5>
-	      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+	      <h5 class="card-title">Nissan Tiida 2012г.</h5>
+	      <p class="card-text text-lowercase">300.000</p>
+	    </div>
+	  </div>
+	  	  <div class="card col-3 bg-info">
+	    <img class="card-img-center" src="{% static 'лансер.jpeg' %}" style="" alt="Card image cap">
+	    <div class="card-body">
+	      <h5 class="card-title">Mitsubishi Lancer 2007г.</h5>
+	      <p class="card-text text-lowercase">220.000</p>
 	    </div>
 	  </div>
 	</div>
